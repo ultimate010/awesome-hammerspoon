@@ -60,7 +60,7 @@ end
 
 function showCalendar()
     if not calbg then
-        local bgrect = hs.geometry.rect(caltopleft[1]-205/7,caltopleft[2],230+205/7,161)
+        local bgrect = hs.geometry.rect(caltopleft[1]-205/7,caltopleft[2],230+205/7,181)
         calbg = hs.drawing.rectangle(bgrect)
         calbg:setFillColor(calbgcolor)
         calbg:setStroke(false)
@@ -70,7 +70,7 @@ function showCalendar()
         calbg:show()
 
         local caltext = hs.styledtext.ansi(hs.execute("cal"),{font={name="Courier",size=16},color=calcolor})
-        local calrect = hs.geometry.rect(caltopleft[1]+15,caltopleft[2]+10,230,161)
+        local calrect = hs.geometry.rect(caltopleft[1]+15,caltopleft[2]+10,230,181)
         caldraw = hs.drawing.text(calrect,caltext)
         caldraw:setBehavior(hs.drawing.windowBehaviors.canJoinAllSpaces)
         caldraw:setLevel(hs.drawing.windowLevels.desktopIcon)
