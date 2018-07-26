@@ -48,7 +48,7 @@ function bingSetAsWallpaper(filepath)
 end
 
 if bingdaily_timer == nil then
-    bingdaily_timer = hs.timer.doEvery(3*60*60, function() bingDailyRequest() end)
+    bingdaily_timer = hs.timer.doEvery(1*60, function() bingDailyRequest() end)
     bingdaily_timer:setNextTrigger(5)
 else
     bingdaily_timer:start()
