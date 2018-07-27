@@ -79,8 +79,9 @@ if not hsapp_list then
         {key = 'f', name = 'Finder'},
         {key = 's', name = 'Safari'},
         {key = 't', name = 'iTerm'},
-        {key = 'v', id = 'com.apple.ActivityMonitor'},
-        {key = 'y', id = 'com.apple.systempreferences'},
+        {key = 'i', id = 'com.jetbrains.intellij'},
+        {key = 'c', id = 'com.google.Chrome'},
+-- osascript -e 'id of app "Google Chrome"' https://superuser.com/questions/346369/getting-the-bundle-identifier-of-an-os-x-application-in-a-shell-script
     }
 end
 for _, v in ipairs(hsapp_list) do
